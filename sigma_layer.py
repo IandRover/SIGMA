@@ -1,5 +1,7 @@
 import torch
 import torch.nn as nn
+import torch.nn.init as init
+import math
 from utils import get_activation_function
 
 class SigmaLinear(nn.Module):
@@ -13,6 +15,11 @@ class SigmaLinear(nn.Module):
         self.backward_act = get_activation_function(args)
         
         # self.forward_layer.bias.data.zero_()
+
+        #nkaiming_uniform_( of forward
+        #nkaiming_uniform_( of backward
+        # init.kaiming_uniform_(self.forward_layer.weight)
+        # init.kaiming_uniform_(self.backward_layer.weight)
         
     def get_parameters(self):
         self.forward_params = list(self.forward_layer.parameters())
@@ -38,6 +45,8 @@ class SigmaConv(nn.Module):
         self.backward_bn = nn.BatchNorm2d(in_channels)
         self.forward_act = get_activation_function(args)
         self.backward_act = get_activation_function(args)
+        # init.kaiming_uniform_(self.forward_layer.weight)
+        # init.kaiming_uniform_(self.backward_layer.weight)
 
         self.hooked_features = 0
 

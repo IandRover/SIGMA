@@ -24,8 +24,7 @@ def get_dataset(args):
     if args.dataset == 'CIFAR10':
         train_transform = transforms.Compose([transforms.ToTensor(), 
                                         transforms.RandomHorizontalFlip(),
-                                        transforms.RandomCrop(32, padding=4),
-                                        # transforms.Normalize([0, 0, 0], [1, 1, 1]),
+                                        # transforms.RandomCrop(32, 4),
                                         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
                                         ])
         test_transform = transforms.Compose([transforms.ToTensor(), 
