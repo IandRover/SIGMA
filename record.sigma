@@ -1,0 +1,234 @@
+
+# Back_lr * 5
+Ep 0 | train loss 2.14 | val loss 18547.16 | val acc 36.77
+Ep 1 | train loss 1.77 | val loss 15632.40 | val acc 44.16
+Ep 2 | train loss 1.54 | val loss 14352.83 | val acc 49.13
+Ep 3 | train loss 1.44 | val loss 14046.13 | val acc 49.74
+Ep 4 | train loss 1.41 | val loss 13079.32 | val acc 53.82
+
+Ep 5 | train loss 1.34 | val loss 12504.72 | val acc 56.22
+Ep 6 | train loss 1.29 | val loss 12316.58 | val acc 56.46
+Ep 7 | train loss 1.25 | val loss 11834.96 | val acc 58.24
+Ep 8 | train loss 1.23 | val loss 11589.82 | val acc 59.43
+Ep 9 | train loss 1.17 | val loss 11354.36 | val acc 60.77
+
+
+# Back lr * 5 + MSE_Loss
+Ep 0 | tloss 2.1 | vloss 1.9 | vacc 34.17
+Ep 1 | tloss 1.8 | vloss 1.8 | vacc 36.42
+37
+
+# Back lr * 5 + MSE_Loss + MaxPool
+Ep 0 | tloss 1.9 | vloss 1.6 | vacc 42.23
+Ep 1 | tloss 1.7 | vloss 1.6 | vacc 44.09
+Ep 2 | tloss 1.6 | vloss 1.6 | vacc 44.51
+Ep 3 | tloss 1.6 | vloss 1.6 | vacc 43.51
+Ep 4 | tloss 1.6 | vloss 1.6 | vacc 44.19
+Ep 5 | tloss 1.6 | vloss 1.6 | vacc 44.06
+
+
+
+# Back lr * 5 + SCLoss + MaxPool (a1, a2)
+Ep 0 | tloss 2.5 | vloss 2.2 | vacc 16.02
+Ep 1 | tloss 2.2 | vloss 2.1 | vacc 23.56
+Ep 2 | tloss 2.1 | vloss 1.9 | vacc 34.35
+Ep 3 | tloss 1.9 | vloss 2.0 | vacc 34.18
+Ep 4 | tloss 1.9 | vloss 1.9 | vacc 36.64
+Ep 5 | tloss 1.9 | vloss 1.8 | vacc 41.31
+Ep 6 | tloss 1.8 | vloss 1.7 | vacc 43.75
+Ep 7 | tloss 1.6 | vloss 1.4 | vacc 50.49
+Ep 8 | tloss 1.5 | vloss 1.4 | vacc 50.96
+Ep 9 | tloss 1.4 | vloss 1.3 | vacc 52.18
+Ep 10 | tloss 1.4 | vloss 1.3 | vacc 52.01
+Ep 11 | tloss 1.4 | vloss 1.3 | vacc 53.34
+Ep 12 | tloss 1.3 | vloss 1.3 | vacc 54.53
+
+# Back lr * 5 + SCLoss + MaxPool (a1) 
+Ep 0 | tloss 2.0 | vloss 1.7 | vacc 40.29
+Ep 1 | tloss 1.6 | vloss 1.5 | vacc 46.13
+Ep 2 | tloss 1.5 | vloss 1.4 | vacc 49.09
+Ep 3 | tloss 1.4 | vloss 1.4 | vacc 50.81
+Ep 4 | tloss 1.4 | vloss 1.4 | vacc 51.89
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.27
+Ep 6 | tloss 1.3 | vloss 1.3 | vacc 54.45
+
+# Back lr * 5 + SCLoss + MaxPool 3x3 (a1) 
+Ep 0 | tloss 2.1 | vloss 1.7 | vacc 40.80
+Ep 1 | tloss 1.6 | vloss 1.5 | vacc 46.01
+Ep 2 | tloss 1.5 | vloss 1.5 | vacc 48.30
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 48.94
+Ep 4 | tloss 1.5 | vloss 1.4 | vacc 50.31
+
+
+
+
+
+# Default (back lr 1)
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 37.18
+Ep 1 | tloss 1.7 | vloss 1.6 | vacc 43.69
+Ep 2 | tloss 1.6 | vloss 1.5 | vacc 48.12
+
+
+# Default (back lr 1) + Horizontal FLip + Crop + Norm (0,1)
+Ep 0 | tloss 2.4 | vloss 2.3 | vacc 12.74
+Ep 1 | tloss 2.3 | vloss 2.2 | vacc 26.38
+Ep 2 | tloss 2.1 | vloss 1.8 | vacc 37.91
+Ep 3 | tloss 1.8 | vloss 1.7 | vacc 40.39
+Ep 4 | tloss 1.7 | vloss 1.6 | vacc 41.76
+Ep 5 | tloss 1.7 | vloss 1.6 | vacc 43.67
+Ep 6 | tloss 1.6 | vloss 1.5 | vacc 44.94
+Ep 7 | tloss 1.6 | vloss 1.5 | vacc 46.23
+Ep 8 | tloss 1.5 | vloss 1.5 | vacc 47.22
+Ep 9 | tloss 1.5 | vloss 1.4 | vacc 48.98
+
+# Default (back lr 1) + Horizontal FLip + Crop + Norm (0.5,0.5)
+Ep 0 | tloss 2.3 | vloss 2.2 | vacc 20.49
+Ep 1 | tloss 2.1 | vloss 2.0 | vacc 29.59
+Ep 2 | tloss 2.0 | vloss 1.9 | vacc 37.23
+Ep 3 | tloss 1.9 | vloss 1.8 | vacc 39.27
+Ep 4 | tloss 1.8 | vloss 1.6 | vacc 39.95
+Ep 5 | tloss 1.7 | vloss 1.6 | vacc 42.10
+Ep 6 | tloss 1.6 | vloss 1.5 | vacc 44.94
+Ep 7 | tloss 1.6 | vloss 1.5 | vacc 46.28
+Ep 8 | tloss 1.6 | vloss 1.5 | vacc 45.77
+Ep 9 | tloss 1.6 | vloss 1.5 | vacc 46.81
+
+
+
+
+# Default (back lr 1) + Horizontal FLip + Norm (0.5,0.5)
+# Same when change into Conv2d
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 34.48
+Ep 1 | tloss 1.7 | vloss 1.6 | vacc 43.19
+Ep 2 | tloss 1.6 | vloss 1.4 | vacc 49.01
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 51.33
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 52.34
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.37
+Ep 6 | tloss 1.3 | vloss 1.3 | vacc 55.67
+Ep 7 | tloss 1.3 | vloss 1.2 | vacc 55.93
+Ep 8 | tloss 1.3 | vloss 1.2 | vacc 57.60
+Ep 9 | tloss 1.2 | vloss 1.2 | vacc 58.90
+Ep 10 | tloss 1.2 | vloss 1.1 | vacc 59.76
+Ep 11 | tloss 1.2 | vloss 1.1 | vacc 60.58
+Ep 12 | tloss 1.2 | vloss 1.1 | vacc 60.35
+Ep 13 | tloss 1.2 | vloss 1.1 | vacc 61.95
+Ep 14 | tloss 1.1 | vloss 1.1 | vacc 61.94
+Ep 15 | tloss 1.1 | vloss 1.1 | vacc 62.48
+Ep 16 | tloss 1.1 | vloss 1.1 | vacc 62.88
+Ep 17 | tloss 1.1 | vloss 1.1 | vacc 63.97
+Ep 18 | tloss 1.1 | vloss 1.1 | vacc 63.58
+Ep 19 | tloss 1.1 | vloss 1.0 | vacc 64.06
+Ep 20 | tloss 1.1 | vloss 1.0 | vacc 64.44
+
+# Default (back lr 1) + Horizontal FLip + Norm (0.5,0.5) + Crop
+Ep 0 | tloss 2.3 | vloss 2.2 | vacc 20.49
+Ep 1 | tloss 2.1 | vloss 2.0 | vacc 29.59
+Ep 2 | tloss 2.0 | vloss 1.9 | vacc 37.23
+Ep 3 | tloss 1.9 | vloss 1.8 | vacc 39.27
+Ep 4 | tloss 1.8 | vloss 1.6 | vacc 39.95
+Ep 5 | tloss 1.7 | vloss 1.6 | vacc 42.10
+Ep 6 | tloss 1.6 | vloss 1.5 | vacc 44.94
+Ep 7 | tloss 1.6 | vloss 1.5 | vacc 46.28
+Ep 8 | tloss 1.6 | vloss 1.5 | vacc 45.77
+Ep 9 | tloss 1.6 | vloss 1.5 | vacc 46.81
+Ep 10 | tloss 1.5 | vloss 1.5 | vacc 47.66
+Ep 11 | tloss 1.5 | vloss 1.4 | vacc 50.49
+Ep 12 | tloss 1.5 | vloss 1.4 | vacc 51.09
+Ep 13 | tloss 1.5 | vloss 1.4 | vacc 49.73
+Ep 14 | tloss 1.4 | vloss 1.4 | vacc 50.47
+Ep 15 | tloss 1.5 | vloss 1.4 | vacc 51.19
+Ep 16 | tloss 1.4 | vloss 1.4 | vacc 48.98
+Ep 17 | tloss 1.4 | vloss 1.4 | vacc 51.90
+Ep 18 | tloss 1.4 | vloss 1.3 | vacc 53.55
+Ep 19 | tloss 1.4 | vloss 1.4 | vacc 51.82
+Ep 20 | tloss 1.4 | vloss 1.3 | vacc 54.88
+
+# Default (back lr 1) + Horizontal FLip + Norm (0.5,0.5)
+# Same when change into Conv2d (bias=True / bias=False 一樣)
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 34.49
+Ep 1 | tloss 1.7 | vloss 1.6 | vacc 43.22
+Ep 2 | tloss 1.6 | vloss 1.4 | vacc 49.23
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 51.10
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 52.62
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.90
+Ep 6 | tloss 1.3 | vloss 1.3 | vacc 56.31
+Ep 7 | tloss 1.3 | vloss 1.2 | vacc 55.88
+Ep 8 | tloss 1.3 | vloss 1.2 | vacc 57.46
+Ep 9 | tloss 1.2 | vloss 1.2 | vacc 59.28
+Ep 10 | tloss 1.2 | vloss 1.1 | vacc 60.11
+Ep 11 | tloss 1.2 | vloss 1.1 | vacc 60.86
+Ep 12 | tloss 1.2 | vloss 1.1 | vacc 61.10
+Ep 13 | tloss 1.2 | vloss 1.1 | vacc 62.32
+Ep 14 | tloss 1.1 | vloss 1.1 | vacc 61.37
+Ep 15 | tloss 1.1 | vloss 1.1 | vacc 62.92
+Ep 16 | tloss 1.1 | vloss 1.1 | vacc 63.14
+Ep 17 | tloss 1.1 | vloss 1.1 | vacc 64.14
+Ep 18 | tloss 1.1 | vloss 1.1 | vacc 63.97
+Ep 19 | tloss 1.1 | vloss 1.0 | vacc 64.38
+Ep 20 | tloss 1.1 | vloss 1.0 | vacc 64.23
+
+
+
+
+
+
+
+
+
+
+# AvePool 2x2 
+Ep 0 | tloss 2.0 | vloss 1.8 | vacc 34.20
+Ep 1 | tloss 1.7 | vloss 1.6 | vacc 43.45
+Ep 2 | tloss 1.5 | vloss 1.4 | vacc 48.71
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 51.78
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 53.17
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 55.05
+Ep 6 | tloss 1.3 | vloss 1.2 | vacc 57.16
+Ep 7 | tloss 1.3 | vloss 1.2 | vacc 57.65
+Ep 8 | tloss 1.2 | vloss 1.2 | vacc 59.12
+Ep 9 | tloss 1.2 | vloss 1.2 | vacc 58.63
+Ep 10 | tloss 1.2 | vloss 1.1 | vacc 60.18
+Ep 11 | tloss 1.2 | vloss 1.1 | vacc 60.83
+Ep 12 | tloss 1.2 | vloss 1.1 | vacc 61.88
+Ep 13 | tloss 1.2 | vloss 1.1 | vacc 61.19
+Ep 14 | tloss 1.2 | vloss 1.1 | vacc 62.63
+Ep 15 | tloss 1.1 | vloss 1.1 | vacc 62.96
+Ep 16 | tloss 1.1 | vloss 1.1 | vacc 62.80
+Ep 17 | tloss 1.1 | vloss 1.1 | vacc 63.09
+Ep 18 | tloss 1.1 | vloss 1.0 | vacc 64.38
+Ep 19 | tloss 1.0 | vloss 1.1 | vacc 64.47
+Ep 20 | tloss 1.1 | vloss 1.0 | vacc 63.80
+Ep 21 | tloss 1.1 | vloss 1.0 | vacc 64.18
+Ep 22 | tloss 1.0 | vloss 1.0 | vacc 65.12
+
+
+
+# Baseline: No Pool
+bn1 + bn2
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 33.63
+Ep 1 | tloss 1.7 | vloss 1.5 | vacc 45.62
+Ep 2 | tloss 1.6 | vloss 1.5 | vacc 48.14
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 50.03
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 53.02
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.63
+Ep 6 | tloss 1.3 | vloss 1.3 | vacc 56.16
+Ep 7 | tloss 1.3 | vloss 1.2 | vacc 57.28
+Ep 8 | tloss 1.3 | vloss 1.2 | vacc 59.06
+Ep 9 | tloss 1.2 | vloss 1.2 | vacc 59.61
+
+bn1 + 
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 33.35
+Ep 1 | tloss 1.7 | vloss 1.5 | vacc 45.65
+Ep 2 | tloss 1.6 | vloss 1.5 | vacc 47.71
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 49.45
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 52.74
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.25
+
+
+bn2 + 
+Ep 0 | tloss 2.1 | vloss 1.8 | vacc 33.58
+Ep 1 | tloss 1.7 | vloss 1.5 | vacc 45.63
+Ep 2 | tloss 1.6 | vloss 1.5 | vacc 48.28
+Ep 3 | tloss 1.5 | vloss 1.4 | vacc 50.11
+Ep 4 | tloss 1.4 | vloss 1.3 | vacc 53.14
+Ep 5 | tloss 1.4 | vloss 1.3 | vacc 54.62
