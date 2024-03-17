@@ -24,11 +24,18 @@ def get_dataset(args):
     if args.dataset == 'CIFAR10':
         train_transform = transforms.Compose([transforms.ToTensor(), 
                                         transforms.RandomHorizontalFlip(),
-                                        # transforms.RandomCrop(32, 4),
-                                        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+                                        transforms.RandomCrop(32, 4, padding_mode='edge'),
+                                        # transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+                                        # transforms.Normalize(mean=(0.4914, 0.4822, 0.4465), std=(3 * 0.2023, 3 * 0.1994, 3 * 0.2010)) # Following pl_bolt's
+                                        transforms.Normalize(
+                                                                mean=[x / 255.0 for x in [125.3, 123.0, 113.9]],
+                                                                std=[x / 255.0 for x in [63.0, 62.1, 66.7]]
+                                                            )
                                         ])
         test_transform = transforms.Compose([transforms.ToTensor(), 
-                                        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+                                        # transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+                                        transforms.Normalize(mean=(0.4914, 0.4822, 0.4465), std=(3 * 0.2023, 3 * 0.1994, 3 * 0.2010))
+                                        ])
         train_dataset = datasets.CIFAR10(root='./data', train=True, download=True, transform=train_transform)
         train_dataset, val_dataset = random_split(train_dataset, [0.8, 0.2])
         test_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=test_transform)
