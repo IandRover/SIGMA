@@ -7,7 +7,7 @@ from utils import get_activation_function
 class SigmaLinear(nn.Module):
     def __init__(self, args, in_features, out_features):
         super(SigmaLinear, self).__init__()
-        self.forward_layer = nn.Linear(in_features, out_features, bias=False)
+        self.forward_layer = nn.Linear(in_features, out_features, bias=True)
         self.backward_layer = nn.Linear(out_features, in_features, bias=False)
         self.backward_bn = nn.BatchNorm1d(in_features)
         
@@ -28,7 +28,7 @@ class SigmaLinear(nn.Module):
 class SigmaConv(nn.Module):
     def __init__(self, args, in_channels, out_channels, kernel_size, pool_size, pool_stride):
         super(SigmaConv, self).__init__()
-        self.forward_layer = nn.Conv2d(in_channels, out_channels, kernel_size, padding=int((kernel_size-1)/2), bias=False)
+        self.forward_layer = nn.Conv2d(in_channels, out_channels, kernel_size, padding=int((kernel_size-1)/2), bias=True)
         self.max_pool = nn.MaxPool2d(pool_size, stride=pool_stride, padding=int((pool_size-1)/2))
         # self.backward_layer = nn.ConvTranspose2d(out_channels, in_channels, kernel_size, stride=2, padding=int((kernel_size-1)/2), output_padding=1)
         self.backward_layer = nn.Conv2d(out_channels, in_channels, kernel_size, padding=int((kernel_size - 1) / 2), bias=False)
